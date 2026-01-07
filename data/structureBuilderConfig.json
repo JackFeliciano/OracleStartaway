@@ -1,0 +1,319 @@
+{
+    "version": "1.0",
+    "currency": "USD",
+    "priceCadence": "annual",
+    "timelineUnit": "business_days",
+    "primaryCta": {
+        "label": "Build my structure",
+        "helper": "Includes free consulting with a Tax Planner"
+    },
+    "steps": {
+        "step1Base": {
+            "title": "Step 1 — Choose your base entity",
+            "subtitle": "Start with the entity that best matches your core activity.",
+            "required": true,
+            "options": [
+                {
+                    "id": "US-LLC-NM",
+                    "publicName": "US LLC (New Mexico)",
+                    "type": "base",
+                    "matchFor": [
+                        "Online businesses",
+                        "Consulting and services",
+                        "Lean global operations"
+                    ],
+                    "whyUsed": "Flexible operating base for many cross-border models.",
+                    "priceAnnual": 998,
+                    "timeline": {
+                        "registrationMin": 5,
+                        "registrationMax": 5,
+                        "tinMin": 20,
+                        "tinMax": 20
+                    }
+                },
+                {
+                    "id": "UK-LLP-EN",
+                    "publicName": "UK LLP (England)",
+                    "type": "base",
+                    "matchFor": [
+                        "Partnership-led operations",
+                        "Multi-partner service businesses",
+                        "Cross-border contracting"
+                    ],
+                    "whyUsed": "Partnership structure often used for international service flows.",
+                    "priceAnnual": 1098,
+                    "timeline": {
+                        "registrationMin": 5,
+                        "registrationMax": 5,
+                        "tinMin": 20,
+                        "tinMax": 20
+                    }
+                },
+                {
+                    "id": "EE-PLC-OU",
+                    "publicName": "Estonia OÜ",
+                    "type": "base",
+                    "matchFor": [
+                        "EU-facing digital businesses",
+                        "Distributed teams",
+                        "B2B services with EU counterparties"
+                    ],
+                    "whyUsed": "EU jurisdiction with strong digital infrastructure.",
+                    "priceAnnual": 1498,
+                    "timeline": {
+                        "registrationMin": 5,
+                        "registrationMax": 5,
+                        "tinMin": 20,
+                        "tinMax": 20
+                    }
+                },
+                {
+                    "id": "HK-LTD-PT",
+                    "publicName": "Hong Kong Ltd",
+                    "type": "base",
+                    "matchFor": [
+                        "Asia-linked trading/operations",
+                        "International sourcing",
+                        "APAC counterparties"
+                    ],
+                    "whyUsed": "Recognized corporate form for APAC-oriented operations.",
+                    "priceAnnual": 2758,
+                    "timeline": {
+                        "registrationMin": 5,
+                        "registrationMax": 5,
+                        "tinMin": 20,
+                        "tinMax": 20
+                    }
+                },
+                {
+                    "id": "US-MSB-MT",
+                    "publicName": "US Money Service Business",
+                    "type": "base",
+                    "matchFor": [
+                        "MSB-style activity (case-dependent)",
+                        "Payment/FX-related operations requiring an MSB posture"
+                    ],
+                    "whyUsed": "Designed for money-service activity and related compliance workflows.",
+                    "priceAnnual": 5582,
+                    "timeline": {
+                        "registrationMin": 10,
+                        "registrationMax": 10,
+                        "tinMin": 40,
+                        "tinMax": 40
+                    },
+                    "notices": [
+                        "Eligibility and compliance requirements apply—confirmed in your free consult."
+                    ]
+                }
+            ]
+        },
+        "step2Layer": {
+            "title": "Step 2 — Add a layer (optional)",
+            "subtitle": "We only show combinations that fit your selected base.",
+            "required": false,
+            "options": [
+                {
+                    "id": "UK-LLP-EN",
+                    "publicName": "UK LLP (England)",
+                    "type": "layer",
+                    "matchFor": [
+                        "Adding a partnership layer for cross-border contracting",
+                        "Multi-party operations"
+                    ],
+                    "priceAnnual": 1098,
+                    "timeline": {
+                        "registrationMin": 5,
+                        "registrationMax": 5,
+                        "tinMin": 20,
+                        "tinMax": 20
+                    }
+                },
+                {
+                    "id": "CA-LLP-BC",
+                    "publicName": "Canada LLP (British Columbia)",
+                    "type": "layer",
+                    "matchFor": [
+                        "Canada-linked counterparties",
+                        "Diversification needs",
+                        "Certain professional/service models"
+                    ],
+                    "priceAnnual": 1355,
+                    "timeline": {
+                        "registrationMin": 20,
+                        "registrationMax": 20,
+                        "tinMin": 60,
+                        "tinMax": 60
+                    }
+                },
+                {
+                    "id": "KN-LLC-NE",
+                    "publicName": "Nevis LLC",
+                    "type": "layer",
+                    "matchFor": [
+                        "Additional legal separation",
+                        "Asset-holding layer (use-case dependent)"
+                    ],
+                    "priceAnnual": 2096,
+                    "timeline": {
+                        "registrationMin": 10,
+                        "registrationMax": 10,
+                        "tinMin": 30,
+                        "tinMax": 30
+                    }
+                }
+            ],
+            "availabilityRules": [
+                {
+                    "ifBaseIn": [
+                        "US-LLC-NM",
+                        "US-MSB-MT"
+                    ],
+                    "allowLayerIn": [
+                        "UK-LLP-EN",
+                        "CA-LLP-BC"
+                    ]
+                },
+                {
+                    "ifBaseIn": [
+                        "UK-LLP-EN",
+                        "EE-PLC-OU"
+                    ],
+                    "allowLayerIn": [
+                        "US-LLC-NM",
+                        "CA-LLP-BC",
+                        "KN-LLC-NE"
+                    ]
+                },
+                {
+                    "ifBaseIn": [
+                        "HK-LTD-PT"
+                    ],
+                    "allowLayerIn": [
+                        "KN-LLC-NE"
+                    ]
+                }
+            ]
+        },
+        "step3Overlay": {
+            "title": "Step 3 — Add an overlay (optional)",
+            "subtitle": "For privacy-first planning, family/office use, or shared investment participation—within the law.",
+            "required": false,
+            "options": [
+                {
+                    "id": "US-TRUST",
+                    "publicName": "US Trust",
+                    "type": "overlay",
+                    "matchFor": [
+                        "Privacy-first ownership",
+                        "Long-term holding",
+                        "Family/estate contexts"
+                    ],
+                    "priceAnnual": 842,
+                    "timeline": {
+                        "registrationMin": 10,
+                        "registrationMax": 10,
+                        "tinMin": 10,
+                        "tinMax": 10
+                    }
+                },
+                {
+                    "id": "UK-PFLP-X",
+                    "publicName": "UK PFLP-X (Asset Fund participation)",
+                    "type": "overlay",
+                    "matchFor": [
+                        "Fractional participation in a UK PFLP class",
+                        "Shared/fund-style exposure"
+                    ],
+                    "priceAnnual": 842,
+                    "timeline": {
+                        "registrationMin": 5,
+                        "registrationMax": 5,
+                        "tinMin": 5,
+                        "tinMax": 5
+                    },
+                    "definition": "Fractional participation in a UK PFLP 'class' (Asset Fund)."
+                },
+                {
+                    "id": "UK-PFLP",
+                    "publicName": "UK PFLP (full)",
+                    "type": "overlay",
+                    "matchFor": [
+                        "Creating the full partnership for a group",
+                        "Family/office/clients collective use"
+                    ],
+                    "priceAnnual": 1098,
+                    "timeline": {
+                        "registrationMin": 5,
+                        "registrationMax": 5,
+                        "tinMin": 15,
+                        "tinMax": 15
+                    },
+                    "definition": "Full UK PFLP entity for collective use."
+                }
+            ]
+        }
+    },
+    "calculation": {
+        "pricing": {
+            "formula": "total = base + layer(optional) + overlay(optional)",
+            "showBreakdown": true
+        },
+        "timelines": {
+            "registrationReadiness": "max(selected.registrationMax)",
+            "tinReadiness": "max(selected.tinMax)",
+            "note": "Estimates in business days; some steps can run in parallel (conservative planning)."
+        }
+    },
+    "complianceTone": {
+        "positioningLine": "Compliance-first structuring, within the law.",
+        "bankingDisclaimer": "Banking outcomes vary by institution; we support documentation and guidance but do not guarantee approvals."
+    },
+    "addOns": {
+        "purchaseTiming": "post_onboarding_only",
+        "items": [
+            {
+                "id": "ADD-ADDRESS-PRIVATE",
+                "name": "Private Commercial Address",
+                "price": 120,
+                "cadence": "annual",
+                "currency": "USD"
+            },
+            {
+                "id": "ADD-PHONE",
+                "name": "Phone Number",
+                "price": 60,
+                "cadence": "annual",
+                "currency": "USD"
+            },
+            {
+                "id": "ADD-IVR",
+                "name": "IVR Programming (with Voice Over)",
+                "price": 60,
+                "cadence": "one_time",
+                "currency": "USD"
+            },
+            {
+                "id": "ADD-DOMAIN-STACK",
+                "name": "Domain, Landing Page, Email and CRM",
+                "price": 180,
+                "cadence": "annual",
+                "currency": "USD"
+            },
+            {
+                "id": "ADD-LIVECHAT",
+                "name": "Live Chat Installation",
+                "price": 60,
+                "cadence": "one_time",
+                "currency": "USD"
+            },
+            {
+                "id": "ADD-WHATSAPP",
+                "name": "WhatsApp Support",
+                "price": 120,
+                "cadence": "annual",
+                "currency": "USD"
+            }
+        ],
+        "displayNote": "Optional upgrades available after onboarding."
+    }
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Builder Test</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <div class="container" style="padding: 60px 0;">
+        <h1>Builder Test</h1>
+        <div id="builderMount">Loading...</div>
+    </div>
+    
+    <script type="module" src="assets/builder.js"></script>
+    <script>
+        // Debug logging
+        console.log('Test page loaded');
+        setTimeout(() => {
+            const mount = document.getElementById('builderMount');
+            console.log('builderMount element:', mount);
+            console.log('builderMount innerHTML:', mount ? mount.innerHTML : 'NOT FOUND');
+        }, 2000);
+    </script>
+</body>
+</html>

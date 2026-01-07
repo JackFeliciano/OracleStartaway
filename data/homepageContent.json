@@ -1,0 +1,391 @@
+{
+    "page": "homepage",
+    "style": {
+        "tone": [
+            "clean",
+            "confidence-first",
+            "scannable",
+            "compliance-forward"
+        ],
+        "primaryCtaLabel": "Build my structure",
+        "primaryCtaHelper": "Includes free consulting with a Tax Planner"
+    },
+    "sections": [
+        {
+            "id": "header",
+            "type": "header",
+            "nav": [
+                {
+                    "label": "Product",
+                    "href": "#builder"
+                },
+                {
+                    "label": "What’s included",
+                    "href": "#includes"
+                },
+                {
+                    "label": "Pricing",
+                    "href": "#pricing"
+                },
+                {
+                    "label": "How it works",
+                    "href": "#how-it-works"
+                },
+                {
+                    "label": "Blog",
+                    "href": "#blog"
+                },
+                {
+                    "label": "Contact",
+                    "href": "#contact"
+                }
+            ],
+            "right": {
+                "secondary": {
+                    "label": "Sign in",
+                    "href": "/login"
+                },
+                "primary": {
+                    "label": "Build my structure",
+                    "href": "#builder"
+                }
+            }
+        },
+        {
+            "id": "hero",
+            "type": "hero",
+            "h1": "Build a compliant multi-entity structure—across jurisdictions—in one platform.",
+            "subhead": "Choose a base entity, add compatible layers, and optional overlays. See total annual cost and estimated timelines instantly—within the law. Every plan includes free consulting with a Tax Planner.",
+            "ctaPrimary": {
+                "label": "Build my structure",
+                "href": "#builder"
+            },
+            "ctaSecondary": {
+                "label": "See how it works",
+                "href": "#how-it-works"
+            }
+        },
+        {
+            "id": "trustbar",
+            "type": "trustbar",
+            "items": [
+                "We file for you (BOI/FBAR & similar, where applicable)",
+                "Government fees included (every jurisdiction)",
+                "Registered agents / secretaries",
+                "Tax preparers + ongoing compliance",
+                "Support in your language"
+            ]
+        },
+        {
+            "id": "how-it-works",
+            "type": "steps",
+            "title": "From idea to operating structure—without guesswork.",
+            "steps": [
+                {
+                    "title": "Pick a base",
+                    "text": "Start where your core business activity fits best."
+                },
+                {
+                    "title": "Add a layer (optional)",
+                    "text": "Only compatible jurisdictions appear—no invalid combinations."
+                },
+                {
+                    "title": "Add an overlay (optional)",
+                    "text": "Privacy-first or shared-investment overlays, when appropriate."
+                }
+            ],
+            "cta": {
+                "label": "Build my structure",
+                "href": "#builder"
+            }
+        },
+        {
+            "id": "builder",
+            "type": "product_builder",
+            "title": "Structure Builder",
+            "subtitle": "Select your entities and instantly see total annual cost + timelines. Then confirm with a free consult with a Tax Planner.",
+            "embed": {
+                "source": "structureBuilderConfig.json"
+            }
+        },
+        {
+            "id": "presets",
+            "type": "presets",
+            "title": "Popular starting points",
+            "subtitle": "Start with a common pattern—then refine it in the Builder.",
+            "items": [
+                {
+                    "id": "preset-lean-services",
+                    "title": "Lean global services",
+                    "prefill": {
+                        "base": "US-LLC-NM"
+                    }
+                },
+                {
+                    "id": "preset-eu-digital",
+                    "title": "EU-facing digital ops",
+                    "prefill": {
+                        "base": "EE-PLC-OU"
+                    }
+                },
+                {
+                    "id": "preset-partnership",
+                    "title": "Partnership-led operations",
+                    "prefill": {
+                        "base": "UK-LLP-EN"
+                    }
+                },
+                {
+                    "id": "preset-apac",
+                    "title": "APAC trading baseline",
+                    "prefill": {
+                        "base": "HK-LTD-PT",
+                        "layer": "KN-LLC-NE"
+                    }
+                },
+                {
+                    "id": "preset-msb",
+                    "title": "MSB assessment path",
+                    "prefill": {
+                        "base": "US-MSB-MT"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "includes",
+            "type": "tabs",
+            "title": "What’s included (formation + ongoing compliance)",
+            "subtitle": "Clear deliverables for formation and maintenance—handled end-to-end, within the law.",
+            "helper": "Scope depends on jurisdiction and activity; your Structure Summary shows exactly what applies.",
+            "tabs": [
+                {
+                    "id": "tab-formation",
+                    "label": "During entity formation (included)",
+                    "items": [
+                        "Free Pre-Sales Consulting (in your language)",
+                        "Name Checks",
+                        "Legal Addresses",
+                        "Registered Agents/Secretaries",
+                        "Commercial Address (except UK and Nevis)",
+                        "Government Fees (included for every jurisdiction)",
+                        "Registration: Articles and/or Certificates of Registration",
+                        "Tax Registration: EIN (USA), UTR (UK) or similar",
+                        "Operating Agreements",
+                        "Members/PSC Registration",
+                        "Financial Accounts Full Support: Banks/EMI, PSP (Billing) and Currency Exchange"
+                    ]
+                },
+                {
+                    "id": "tab-maintenance",
+                    "label": "Maintenance (included)",
+                    "items": [
+                        "Government Renewals (fees included): franchise taxes and confirmations",
+                        "Compliance Filings — we file for you: US FinCEN BOI, FBAR and similar (where applicable)",
+                        "Corporate Tax Filing (by Professional Tax Preparers): 1120 + 5472 (USA), HS380 (UK), Annual Reports",
+                        "Personal Tax Filings: SA401 (UK only)",
+                        "Corporate Proxies: have someone to talk on your behalf with Secretaries of State and IRS (USA), Companies House and HMRC (UK), and jurisdictional government and tax authorities",
+                        "Premium Support (Financial, Tax and Legal): Statements, Filings, Contracts and Guidance in your language (online)"
+                    ]
+                },
+                {
+                    "id": "tab-addons",
+                    "label": "Optionals (paid)",
+                    "note": "Optional upgrades available after onboarding.",
+                    "items": [
+                        "Private Commercial Address: $120USD/year",
+                        "Phone Number: 60USD/year",
+                        "IVR Programming (with Voice Over): 60USD",
+                        "Domain, Landing Page, Email and CRM: 180USD/year",
+                        "Live Chat Installation: 60USD",
+                        "WhatsApp Support: 120USD/year"
+                    ]
+                }
+            ],
+            "cta": {
+                "label": "Build my structure",
+                "href": "#builder"
+            }
+        },
+        {
+            "id": "why",
+            "type": "tiles",
+            "title": "A software-led way to manage multi-entity structures.",
+            "tiles": [
+                {
+                    "title": "Built for multi-entity reality",
+                    "text": "Base + layers + overlays—managed in one place."
+                },
+                {
+                    "title": "Transparent cost & timelines",
+                    "text": "See breakdowns and readiness estimates before you commit."
+                },
+                {
+                    "title": "Compliance-first, within the law",
+                    "text": "We prioritize filings, documentation, and ongoing obligations."
+                },
+                {
+                    "title": "Ongoing maintenance",
+                    "text": "Renewals, tax prep support, and admin handled systematically."
+                }
+            ]
+        },
+        {
+            "id": "faq",
+            "type": "faq",
+            "title": "FAQs",
+            "items": [
+                {
+                    "q": "Is this legal?",
+                    "a": "Yes. We support compliant structuring within the law. Fit depends on your facts, jurisdictions, and activity."
+                },
+                {
+                    "q": "Do you guarantee bank account approval?",
+                    "a": "No—banks decide. We provide end-to-end support and documentation guidance."
+                },
+                {
+                    "q": "How long does it take?",
+                    "a": "Your Builder shows estimates in business days. We also show two checkpoints: registration readiness and TIN readiness."
+                },
+                {
+                    "q": "What do I need to start?",
+                    "a": "A short intake, KYC documents, and clarity on your business activity and counterparties."
+                },
+                {
+                    "q": "Do you file compliance reports?",
+                    "a": "Yes—we file for you where applicable (e.g., FinCEN BOI, FBAR and similar)."
+                }
+            ],
+            "cta": {
+                "label": "Build my structure",
+                "href": "#builder",
+                "helper": "Includes free consulting with a Tax Planner"
+            }
+        },
+        {
+            "id": "blog",
+            "type": "blog_teaser",
+            "title": "From the blog",
+            "posts": [
+                {
+                    "title": "Post title #1",
+                    "excerpt": "One sentence teaser that stays compliance-first.",
+                    "href": "/blog/post-1",
+                    "tag": "Structures"
+                },
+                {
+                    "title": "Post title #2",
+                    "excerpt": "One sentence teaser focused on timelines and process.",
+                    "href": "/blog/post-2",
+                    "tag": "Compliance"
+                },
+                {
+                    "title": "Post title #3",
+                    "excerpt": "One sentence teaser about maintaining multi-entity operations.",
+                    "href": "/blog/post-3",
+                    "tag": "Accounting"
+                }
+            ],
+            "cta": {
+                "label": "View all posts",
+                "href": "/blog"
+            }
+        },
+        {
+            "id": "contact",
+            "type": "contact_form",
+            "title": "Contact",
+            "subtitle": "Send a message—reply within 1–2 business days.",
+            "fields": [
+                {
+                    "id": "fullName",
+                    "label": "Full name",
+                    "type": "text",
+                    "required": true
+                },
+                {
+                    "id": "email",
+                    "label": "Email",
+                    "type": "email",
+                    "required": true
+                },
+                {
+                    "id": "buildSize",
+                    "label": "What are you building?",
+                    "type": "select",
+                    "required": true,
+                    "options": [
+                        "Single entity",
+                        "2–3 entities",
+                        "4–5 entities",
+                        "Not sure"
+                    ]
+                },
+                {
+                    "id": "jurisdictions",
+                    "label": "Jurisdictions of interest",
+                    "type": "text",
+                    "required": false
+                },
+                {
+                    "id": "message",
+                    "label": "Message",
+                    "type": "textarea",
+                    "required": true
+                },
+                {
+                    "id": "wantTaxPlanner",
+                    "label": "I want the free consult with a Tax Planner",
+                    "type": "checkbox",
+                    "required": false
+                }
+            ],
+            "submit": {
+                "label": "Send message"
+            },
+            "successMessage": "Thanks—your message is in. We’ll reply within 1–2 business days."
+        },
+        {
+            "id": "about",
+            "type": "about_story",
+            "title": "About Startaway",
+            "story": "Startaway was built for founders and operators running across borders—who need clear structures, transparent costs, and a compliance-first way to stay on track. We combine a software-led platform with hands-on support, so your structure is formed correctly and maintained responsibly.",
+            "cta": {
+                "label": "Build my structure",
+                "href": "#builder",
+                "helper": "Includes free consulting with a Tax Planner"
+            }
+        },
+        {
+            "id": "footer",
+            "type": "footer",
+            "columns": [
+                {
+                    "title": "Product",
+                    "links": [
+                        "Structure Builder",
+                        "What’s included",
+                        "Pricing",
+                        "How it works"
+                    ]
+                },
+                {
+                    "title": "Company",
+                    "links": [
+                        "About",
+                        "Blog",
+                        "Contact"
+                    ]
+                },
+                {
+                    "title": "Legal",
+                    "links": [
+                        "Terms",
+                        "Privacy",
+                        "Disclosures"
+                    ]
+                }
+            ]
+        }
+    ]
+}
