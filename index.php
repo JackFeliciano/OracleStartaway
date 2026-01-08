@@ -51,6 +51,9 @@
 
                 <div class="grid grid-2">
                     <div>
+                        <!-- small yellow line above H1 -->
+                        <div class="accent-bar"></div>
+
                         <h1 class="h1">Build a compliant multi-entity structure—across jurisdictions—in one platform.</h1>
                         <p class="subhead">Choose a base entity, add compatible layers and optional overlays, see total annual cost and estimated timelines instantly—within the law. Every plan includes free consulting with a Tax Planner.<br><br></p>
                         <div class="button-group">
@@ -306,22 +309,25 @@
             </div>
         </section>
 
-        <!-- Section 7: What's Included -->
-        <section class="section section--navy section--image" id="includes" style="background-image:url('assets/images/pattern-wave.jpg')">
-            <div class="container">
-                <div class="section-id">Section 7: What's Included</div>
+        <section class="section section--navy section--image" id="includes"
+  style="background-image:url('assets/images/pattern-wave.jpg')">
+  <div class="container">
+    <div class="section-id">Section 7: What's Included</div>
 
-                <div class="section-header">
-                    <div class="accent-bar accent-bar--center"></div>
-                    <h2 class="h2">What's included (formation + ongoing compliance)</h2>
-                    <p class="p">Clear deliverables for formation and maintenance—handled end-to-end, within the law.</p>
-                    <div class="small">Scope depends on jurisdiction and activity; your Structure Summary shows exactly what applies.</div>
-                </div>
-                <div id="includesMount" style="margin-top:48px"></div>
-                <div style="margin-top:48px;text-align:center">
-                    <a class="btn btn--primary btn--large" href="#builder">Build my structure</a>
-                </div>
-            </div>
+    <div class="section-header">
+      <div class="accent-bar accent-bar--center"></div>
+      <h2 class="h2">What's included (formation + ongoing compliance)</h2>
+      <p class="p">Clear deliverables for formation and maintenance—handled end-to-end, within the law.</p>
+      <div class="small">Scope depends on jurisdiction and activity; your Structure Summary shows exactly what applies.</div>
+    </div>
+
+    <div id="includesMount" style="margin-top:48px"></div>
+
+    <div style="margin-top:48px;text-align:center">
+      <a class="btn btn--primary btn--large" href="#builder">Build my structure</a>
+    </div>
+  </div>
+</section>
         </section>
 
         <!-- Section 5: Why Startaway (restored from index-new.php) -->
@@ -462,33 +468,36 @@
             </div>
         </section>
 
-        <!-- Section 11: Contact (restore Cloudflare-protected email) -->
-        <section class="section section--navy section--image" id="contact" style="position:relative;background-image:url('assets/images/contact-bg.jpg')">
-            <div class="container">
-                <div class="section-id">Section 11: Contact</div>
+        <!-- Section 11: Contact -->
+<section class="section section--navy section--image" id="contact"
+  style="position:relative;background-image:url('assets/images/contact-bg.jpg')">
 
-                <div class="grid grid-2">
-                    <div>
-                        <h2 class="h2">Contact</h2>
-                        <p class="p">Send a message—reply within 1–2 business days.</p>
-                        <div class="small">Prefer to start with a plan? Use the Builder and we'll schedule your free consult with a Tax Planner.</div>
-                    </div>
+  <div class="container">
+    <div class="section-id">Section 11: Contact</div>
 
-                    <div class="card">
-                        <div style="margin-bottom:16px">
-                            <h3 class="h3">Email us</h3>
-                            <p>
-                                <a href="/cdn-cgi/l/email-protection#2b434e4747446b585f4a595f4a5c4a52054a5b5b" style="color:var(--primary);">
-                                    <span class="__cf_email__" data-cfemail="96fef3fafaf9d6e5e2f7e4e2f7e1f7efb8f7e6e6">[email&#160;protected]</span>
-                                </a>
-                            </p>
-                        </div>
+    <div class="grid grid-2">
+      <div>
+        <h2 class="h2">Contact</h2>
+        <p class="p">Send a message—reply within 1–2 business days.</p>
+        <div class="small">
+          Prefer to start with a plan? Use the Builder and we’ll schedule your free consult with a Tax Planner.
+        </div>
 
-                        <div id="contactMount"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div style="margin-top:16px">
+          <h3 class="h3">Email us</h3>
+          <p>
+            <a id="emailLink" href="#" style="color:var(--primary);">[email&nbsp;protected]</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div id="contactMount"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
         <!-- Section 8: About (restored from index-new.php) -->
         <section class="section" id="about">
@@ -571,7 +580,7 @@
     </footer>
 
     <!-- Cloudflare email decode (needed for __cf_email__) -->
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <!--<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>-->
 
     <!-- Load builder script for the interactive structure builder -->
     <script type="module" src="assets/builder.js"></script>
@@ -635,7 +644,190 @@
             // This would be handled by builder.js
             document.getElementById('builder').scrollIntoView({ behavior: 'smooth' });
         }
+		
+		  (function () {
+		      // Simple obfuscation: assemble from parts so bots scraping HTML get less value.
+		      const user = "hello";
+		      const domain = "startaway";
+		      const tld = "vip"; // change if needed
+
+		      const email = `${user}@${domain}.${tld}`;
+		      const a = document.getElementById("emailLink");
+		      if (a) {
+		        a.href = `mailto:${email}`;
+		        a.textContent = email;
+		      }
+		    })();
     </script>
+	
+<!-- Load builder script for the interactive structure builder -->
+<script type="module" src="assets/builder.js"></script>
+
+<script>
+  (function () {
+    // ----- Includes data (Option B: embed it here) -----
+    // Replace items with YOUR exact lists if needed.
+    const INCLUDES = {
+      tabs: [
+        {
+          id: "tab-formation",
+          label: "During entity formation (included)",
+          items: [
+            "Free Pre-Sales Consulting (in your language)",
+            "Name Checks",
+            "Legal Addresses",
+            "Registered Agents/Secretaries",
+            "Commercial Address (except UK and Nevis)",
+            "Government Fees (included for every jurisdiction)",
+            "Registration: Articles and/or Certificates of Registration",
+            "Tax Registration: EIN (USA), UTR (UK) or similar",
+            "Operating Agreements",
+            "Members/PSC Registration",
+            "Financial Accounts Full Support: Banks/EMI, PSP (Billing) and Currency Exchange"
+          ]
+        },
+        {
+          id: "tab-maintenance",
+          label: "Maintenance (included)",
+          items: [
+            "Annual reports and renewals (where required)",
+            "Registered agent / secretary continuity",
+            "Basic compliance reminders and tracking",
+            "Support for tax prep coordination (jurisdiction-dependent)"
+          ]
+        },
+        {
+          id: "tab-optionals",
+          label: "Optionals (paid)",
+          items: [
+            "Accounting / bookkeeping add-ons",
+            "VAT registration and filings (where applicable)",
+            "Payroll setup",
+            "Special licenses (activity-dependent)"
+          ]
+        }
+      ]
+    };
+
+    let activeTabId = INCLUDES.tabs[0].id;
+
+    function esc(s) {
+      return String(s ?? "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+    }
+
+    function renderIncludes() {
+      const mount = document.getElementById("includesMount");
+      if (!mount) return;
+
+      const active = INCLUDES.tabs.find(t => t.id === activeTabId) || INCLUDES.tabs[0];
+
+      mount.innerHTML = `
+        <div class="card">
+          <div class="tabs">
+            ${INCLUDES.tabs.map(t => `
+              <button class="tab ${t.id === active.id ? "tab--active" : ""}" data-tab="${esc(t.id)}">
+                ${esc(t.label)}
+              </button>
+            `).join("")}
+          </div>
+
+          <ul class="list">
+            ${active.items.map(it => `<li>${esc(it)}</li>`).join("")}
+          </ul>
+        </div>
+      `;
+
+      mount.querySelectorAll("button[data-tab]").forEach(btn => {
+        btn.addEventListener("click", () => {
+          activeTabId = btn.getAttribute("data-tab");
+          renderIncludes();
+        });
+      });
+    }
+
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", renderIncludes);
+    } else {
+      renderIncludes();
+    }
+  })();
+</script>
+
+
+<script>
+  (function () {
+    // -------- Option B: self-contained email obfuscation --------
+    const user = "hello";
+    const domain = "startaway";
+    const tld = "vip"; // change if needed
+    const email = `${user}@${domain}.${tld}`;
+
+    const emailA = document.getElementById("emailLink");
+    if (emailA) {
+      emailA.href = `mailto:${email}`;
+      emailA.textContent = email;
+    }
+
+    // -------- Contact form renderer (replaces app.js renderContact) --------
+    function renderContactForm() {
+      const mount = document.getElementById("contactMount");
+      if (!mount) return;
+
+      mount.innerHTML = `
+        <form id="contactForm">
+          <div class="grid" style="gap:10px">
+            <input class="card" style="padding:12px" name="fullName" placeholder="Full name" required />
+            <input class="card" style="padding:12px" name="email" type="email" placeholder="Email" required />
+            <select class="card" style="padding:12px" name="buildSize" required>
+              <option value="" selected disabled>What are you building?</option>
+              <option>Single entity</option>
+              <option>2–3 entities</option>
+              <option>4–5 entities</option>
+              <option>Not sure</option>
+            </select>
+            <input class="card" style="padding:12px" name="jurisdictions" placeholder="Jurisdictions of interest (optional)" />
+            <textarea class="card" style="padding:12px;min-height:110px" name="message" placeholder="Message" required></textarea>
+
+            <label class="small" style="display:flex;gap:10px;align-items:flex-start">
+              <input type="checkbox" name="wantTaxPlanner" />
+              <span>I want the free consult with a Tax Planner</span>
+            </label>
+
+            <button class="btn btn--primary" type="submit">Send message</button>
+            <div id="contactStatus" class="small"></div>
+          </div>
+        </form>
+      `;
+
+      const form = mount.querySelector("#contactForm");
+      const status = mount.querySelector("#contactStatus");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        status.textContent = "Opening your email client…";
+
+        const payload = Object.fromEntries(new FormData(form).entries());
+        const subject = encodeURIComponent("Startaway — Contact request");
+        const body = encodeURIComponent(JSON.stringify(payload, null, 2));
+
+        // mailto fallback (same behavior as your old app.js when contactPostUrl = "")
+        window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+      });
+    }
+
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", renderContactForm);
+    } else {
+      renderContactForm();
+    }
+  })();
+</script>
+
 </body>
 
 </html>
