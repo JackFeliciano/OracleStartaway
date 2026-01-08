@@ -22,7 +22,7 @@ async function init() {
     console.log('builderMount found, fetching config...');
     
     try {
-        const response = await fetch('data/structureBuilderConfig.json');
+        const response = await fetch('assets/scripts/structureBuilderConfig.json');
         
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
